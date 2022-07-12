@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+body{
+    background-color: white;
+    font-family: 'Source Code Pro', monospace;
+    color: black;
+    font-size: 24px;
+}
+
+:root{
+    --grid-size: 16;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+    font-weight: bold;
+}
+
+#container-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(var(--grid-size), 1fr);
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.create-squares{
+    width: auto;
+    height: auto;
+}
+
+button{
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    border-radius: 8px;
+    border-color: grey;
+    font-family: 'Source Code Pro', monospace;
+    color: black;
+    font-weight: bold;
+}
+
+.clear-button{
+    color: black;
+    font: 14px;
+    width: 50px;
+    height: 30px;
+}
+
+.change-grid-size{
+    color: black;
+    font: 14px;
+    width: 90px;
+    height: 40px;
+}
+
+.crazy-mode{
+    color: black;
+    font: 14px;
+    width: 90px;
+    height: 40px;
+}
+
+#container-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 34px;
+    gap: 10px;
+}
